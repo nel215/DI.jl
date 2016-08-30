@@ -1,0 +1,6 @@
+language: julia
+julia:
+    - 0.4
+sudo: false
+script:
+    - julia -e 'Pkg.clone(pwd()); Pkg.test("DI")'
